@@ -1,0 +1,9 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2.5rem;
+  input[type='color'] {
+    cursor: pointer;
+  }
+}

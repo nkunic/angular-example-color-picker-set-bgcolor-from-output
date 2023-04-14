@@ -1,0 +1,16 @@
+.sma-color-picker {
+  height: 2.5rem;
+  width: 5rem;
+  border: {
+    width: 1px;
+    style: solid;
+    radius: 6px;
+    color: gray;
+  }
+  padding: 0.3125rem;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}

@@ -1,0 +1,7 @@
+<input
+  [id]="id"
+  class="color-picker"
+  type="color"
+  [value]="value"
+  [title]="title"
+  (input)="colorSelected.emit($event.target.value)">

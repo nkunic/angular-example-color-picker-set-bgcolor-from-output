@@ -1,12 +1,11 @@
 <div class="wrapper">
-
   <app-color-picker
-    (colorSelected)="myComponent.setColor($event)">
+    [id]="'color-picker-1'"
+    [value]="'#ffffff'"
+    [title]="'Select color'"
+    (colorSelected)="myComponent.setColor($event)"
+  >
   </app-color-picker>
 
-  <app-badge 
-    #myComponent 
-    [backgroundColor]="backgroundColor">
-  </app-badge>
-
+  <app-badge #myComponent [backgroundColor]="backgroundColor"> </app-badge>
 </div>

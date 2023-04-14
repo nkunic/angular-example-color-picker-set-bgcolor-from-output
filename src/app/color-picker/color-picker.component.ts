@@ -6,5 +6,9 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./color-picker.component.scss'],
 })
 export class ColorPickerComponent {
+  @Input() id: string | undefined;
+  @Input() value: string | undefined;
+  @Input() title: string | undefined;
+
   @Output() colorSelected = new EventEmitter<string>();
 }

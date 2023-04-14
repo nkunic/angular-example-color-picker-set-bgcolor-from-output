@@ -11,4 +11,10 @@ export class ColorPickerComponent {
   @Input() title: string | undefined;
 
   @Output() colorSelected = new EventEmitter<string>();
+
+  onColorSelected(event: Event) {
+    const target = event.target as HTMLInputElement;
+    const color = target.value;
+    this.colorSelected.emit(color);
+  }
 }

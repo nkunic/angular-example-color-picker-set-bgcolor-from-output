@@ -4,12 +4,12 @@
     [id]="'color-picker-1'"
     [value]="'#ffffff'"
     [title]="'Select color'"
-    (colorSelected)="myComponent.setColor($event)"
+    (colorSelected)="tagetComponent.setColor($event)"
   >
   </app-color-picker>
 
   <app-badge 
-    #myComponent 
+    #tagetComponent 
     [backgroundColor]="backgroundColor">
   </app-badge>
 
